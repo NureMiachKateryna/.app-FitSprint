@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Базовий курс</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Базовий курс</h1>
+        <a href="index.html" class="back-btn">Назад до курсів</a>
+    </header>
+    <main>
+        <section id="exercises">
+            <h2>Вправи</h2>
+            <div class="exercise">
+                <h3>Вправа 1: Розтяжка</h3>
+                <p>Почніть з легкої розтяжки для підготовки м'язів до тренування. Виконуйте протягом 30 секунд.</p>
+                <iframe width="300" height="150" src="https://www.youtube.com/embed/t-UuoFG2_7Q" frameborder="0"
+                    allowfullscreen></iframe>
+                <button class="start-exercise-btn" data-duration="30">Почати вправу</button>
+                <div class="timer-container" style="display:none;">
+                    <div class="timer">
+                        <p id="timer1">00:30</p>
+                    </div>
+                    <button class="stop-exercise-btn" style="display:none;">Зупинити</button>
+                </div>
+                <div class="completion-message" style="display:none;">Вправа завершена!</div>
+            </div>
+            <div class="exercise">
+                <h3>Вправа 2: Планка</h3>
+                <p>Тримайте планку протягом 1 хвилини для зміцнення кора.</p>
+                <iframe width="300" height="150" src="https://www.youtube.com/embed/pSHjTRCQxIw" frameborder="0"
+                    allowfullscreen></iframe>
+                <button class="start-exercise-btn" data-duration="60">Почати вправу</button>
+                <div class="timer-container" style="display:none;">
+                    <div class="timer">
+                        <p id="timer2">01:00</p>
+                    </div>
+                    <button class="stop-exercise-btn" style="display:none;">Зупинити</button>
+                </div>
+                <div class="completion-message" style="display:none;">Вправа завершена!</div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
